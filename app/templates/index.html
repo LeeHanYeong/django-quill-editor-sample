@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <h2>django-quill-editor</h2>
+        <p>
+            <a href="https://badge.fury.io/py/django-quill-editor" rel="nofollow" target="_blank"><img src="https://camo.githubusercontent.com/cfe2e4a353de33cb25b94cf7444459eeb9e7818e/68747470733a2f2f62616467652e667572792e696f2f70792f646a616e676f2d7175696c6c2d656469746f722e737667" alt="PyPI version" data-canonical-src="https://badge.fury.io/py/django-quill-editor.svg" style="max-width:100%;"></a>
+        </p>
+        <p>
+            <a href="https://github.com/LeeHanYeong/django-quill-editor" target="_blank">django-quill-editor</a> makes <a href="https://quilljs.com/" target="_blank">Quill.js</a> easy to use on Django Forms and admin sites
+        </p>
+        <ul>
+            <li><b>No configuration required for static files!</b></li>
+            <li>The entire code for inserting WYSIWYG editor is less than 30 lines</li>
+            <li>It can be used in both admin and Django views</li>
+        </ul>
+        <img src="{% static 'quill.png' %}" style="max-width: 500px;" alt="">
+        <hr>
+
+        <h3>Form and ModelForm</h3>
+        <p style="white-space: pre-line">You can display the editor using quill.js in the template using Form or ModelForm.
+            When displaying HTML content, not the editor, use the <b>.html</b> property</p>
+        <p>
+            <a href="{% url 'posts:quill-post-list' %}">Go to Example ▶</a>
+        </p>
+
+        <h3>Django admin</h3>
+        <p style="white-space: pre-line">You can easily integrate with django admin.
+
+            There is a user created as a sample.
+            After logging in with username <b>lhy</b> and password <b>1</b>, you can see the admin page.</p>
+        <p>
+            <a href="{% url 'admin:index' %}">Go to Django admin ▶</a>
+        </p>
+    </div>
+{% endblock %}
