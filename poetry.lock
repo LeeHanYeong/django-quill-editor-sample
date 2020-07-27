@@ -50,23 +50,6 @@ django = "*"
 
 [[package]]
 category = "main"
-description = "WSGI HTTP Server for UNIX"
-name = "gunicorn"
-optional = false
-python-versions = ">=3.4"
-version = "20.0.4"
-
-[package.dependencies]
-setuptools = ">=3.0"
-
-[package.extras]
-eventlet = ["eventlet (>=0.9.7)"]
-gevent = ["gevent (>=0.13)"]
-setproctitle = ["setproctitle"]
-tornado = ["tornado (>=0.2)"]
-
-[[package]]
-category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -90,7 +73,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.1"
 
 [metadata]
-content-hash = "baa63489f0bb065a0a9fc65db8aacab9f458a699d821683225d8b465746a3189"
+content-hash = "c61125192984d20e84eaf4f2e1f54ce69880fcbb10363cfdc6eef627b37164fc"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -109,10 +92,6 @@ django-extensions = [
 django-quill-editor = [
     {file = "django-quill-editor-0.1.10.tar.gz", hash = "sha256:c2017b6095b9bd9276356c5053102afaa51561aaf2728b592eb719c7a38ba443"},
     {file = "django_quill_editor-0.1.10-py3-none-any.whl", hash = "sha256:6a14b9dbc802e07393ab29dfee0240a3b8e55c6018b49433f4e77556e72d2e66"},
-]
-gunicorn = [
-    {file = "gunicorn-20.0.4-py2.py3-none-any.whl", hash = "sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c"},
-    {file = "gunicorn-20.0.4.tar.gz", hash = "sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
