@@ -6,7 +6,7 @@ authors = ["lhy <dev@lhy.kr>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-django = "^3.0.7"
+django = "^3.0.12"
 django-quill-editor = "^0.1.10"
 django-extensions = "^2.2.9"
 
